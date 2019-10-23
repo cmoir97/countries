@@ -1,6 +1,7 @@
 <template lang="html">
   <div>
     <h1>Countries</h1>
+    <countries-list :countries='countries'></countries-list>
   </div>
 </template>
 
