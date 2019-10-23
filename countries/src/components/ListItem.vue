@@ -1,16 +1,16 @@
 <template lang="html">
-  <li @click="handleClick">{{country.name}}</li>
+  <option @click="handleClick">{{country.name}}</option>
+
 </template>
 
 <script>
-import {eventBus} from '../main.js'
-
+import {eventBus} from "../main.js";
 export default {
   name: 'list-item',
   props: ['country'],
   methods: {
     handleClick(){
-      eventBus.$emit('country-selected', this.country)
+      eventBus.$emit("country-selected", this.country)
     }
   }
 }
